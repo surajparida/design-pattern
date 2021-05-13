@@ -1,0 +1,14 @@
+--------------------------------------------------------
+search can be specific to generic.
+--------------------------------------------------------
+[Example 1]
+
+Search by SSN/Id
+
+       IF  [SSN/Id is missing]  THEN   [Search by Name]
+
+                IF  [Name is missing] THEN  [Search by Date of Birth & Location]
+
+--------------------------------------------------------
+This will improve performance
+--------------------------------------------------------
