@@ -2,18 +2,18 @@ package com.mi.patterns.behavioral.interpreter.expression;
 
 public class TerminalExpression implements Expression {
 
-   private String data;
+    private String data;
 
-   public TerminalExpression(String data){
-      this.data = data; 
-   }
+    public TerminalExpression(String data) {
+        this.data = data;
+    }
 
-   @Override
-   public boolean interpret(String context) {
-   
-      if(context.contains(data)){
-         return true;
-      }
-      return false;
-   }
+    @Override
+    public boolean interpret(String context) {
+
+        if (context.contains(data)) {
+            return true;
+        }
+        return false;
+    }
 }

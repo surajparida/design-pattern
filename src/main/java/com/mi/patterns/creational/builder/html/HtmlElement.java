@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class HtmlElement {
-    public String name, text;
-    public ArrayList<HtmlElement> elements = new ArrayList<HtmlElement>();
     private final int indentSize = 2;
     private final String newLine = System.lineSeparator();
+    public String name, text;
+    public ArrayList<HtmlElement> elements = new ArrayList<>();
 
     public HtmlElement() {
     }

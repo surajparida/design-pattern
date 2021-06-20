@@ -1,17 +1,17 @@
 package com.mi.patterns.creational.state.player;
 
 public class StatePatternDemo {
-   public static void main(String[] args) {
-      Context context = new Context();
+    public static void main(String[] args) {
+        Context context = new Context();
 
-      StartState startState = new StartState();
-      startState.doAction(context);
+        StartState startState = new StartState();
+        startState.doAction(context);
 
-      System.out.println(context.getState().toString());
+        System.out.println(context.getState().toString());
 
-      StopState stopState = new StopState();
-      stopState.doAction(context);
+        StopState stopState = new StopState();
+        stopState.doAction(context);
 
-      System.out.println(context.getState().toString());
-   }
+        System.out.println(context.getState().toString());
+    }
 }

@@ -1,20 +1,22 @@
 package com.mi.patterns.behavioral.template.game;
 
 public abstract class Game {
-   abstract void initialize();
-   abstract void startPlay();
-   abstract void endPlay();
+    abstract void initialize();
 
-   //template method
-   public final void play(){
+    abstract void startPlay();
 
-      //initialize the game
-      initialize();
+    abstract void endPlay();
 
-      //start game
-      startPlay();
+    //template method
+    public final void play() {
 
-      //end game
-      endPlay();
-   }
+        //initialize the game
+        initialize();
+
+        //start game
+        startPlay();
+
+        //end game
+        endPlay();
+    }
 }

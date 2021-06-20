@@ -2,18 +2,18 @@ package com.mi.patterns.behavioral.interpreter.messagevalidator;
 
 public class HeaderExpression implements Expression {
 
-   private String data;
+    private String data;
 
-   public HeaderExpression(String data){
-      this.data = data; 
-   }
+    public HeaderExpression(String data) {
+        this.data = data;
+    }
 
-   @Override
-   public boolean interpret(String context) {
-   
-      if(context.contains(data)){
-         return true;
-      }
-      return false;
-   }
+    @Override
+    public boolean interpret(String context) {
+
+        if (context.contains(data)) {
+            return true;
+        }
+        return false;
+    }
 }

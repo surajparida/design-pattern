@@ -5,9 +5,9 @@ import java.util.Map;
 
 public class SearchForm {
 
-   private Map<String,String> paramerters = new HashMap<String,String>();
+    private Map<String, String> paramerters = new HashMap<String, String>();
 
-    public void setParameter(String name, String value){
+    public void setParameter(String name, String value) {
         paramerters.put(name, value);
     }
 

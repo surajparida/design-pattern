@@ -2,13 +2,13 @@ package com.mi.patterns.behavioral.nullobject.customer;
 
 public class NullCustomer extends AbstractCustomer {
 
-   @Override
-   public String getName() {
-      return "Not Available in Customer Database";
-   }
+    @Override
+    public String getName() {
+        return "Not Available in Customer Database";
+    }
 
-   @Override
-   public boolean isNil() {
-      return true;
-   }
+    @Override
+    public boolean isNil() {
+        return true;
+    }
 }

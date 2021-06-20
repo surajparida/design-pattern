@@ -1,13 +1,13 @@
 package com.mi.patterns.behavioral.memento.state;
 
 public class Memento {
-   private String state;
+    private String state;
 
-   public Memento(String state){
-      this.state = state;
-   }
+    public Memento(String state) {
+        this.state = state;
+    }
 
-   public String getState(){
-      return state;
-   }	
+    public String getState() {
+        return state;
+    }
 }

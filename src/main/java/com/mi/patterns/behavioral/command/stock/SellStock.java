@@ -1,13 +1,13 @@
 package com.mi.patterns.behavioral.command.stock;
 
 public class SellStock implements Order {
-   private Stock abcStock;
+    private Stock abcStock;
 
-   public SellStock(Stock abcStock){
-      this.abcStock = abcStock;
-   }
+    public SellStock(Stock abcStock) {
+        this.abcStock = abcStock;
+    }
 
-   public void execute() {
-      abcStock.sell();
-   }
+    public void execute() {
+        abcStock.sell();
+    }
 }

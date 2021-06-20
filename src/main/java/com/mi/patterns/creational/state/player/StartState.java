@@ -2,12 +2,12 @@ package com.mi.patterns.creational.state.player;
 
 public class StartState implements State {
 
-   public void doAction(Context context) {
-      System.out.println("Player is in start state");
-      context.setState(this);	
-   }
+    public void doAction(Context context) {
+        System.out.println("Player is in start state");
+        context.setState(this);
+    }
 
-   public String toString(){
-      return "Start State";
-   }
+    public String toString() {
+        return "Start State";
+    }
 }

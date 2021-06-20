@@ -21,7 +21,6 @@ public class ObjectPoolDemo {
         // Use the connection
 
 
-
         // Return the connection:
         pool.checkIn(con);
 

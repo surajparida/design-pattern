@@ -1,12 +1,12 @@
 package com.mi.patterns.behavioral.template.game;
 
 public class TemplatePatternDemo {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Game game = new Cricket();
-      game.play();
-      System.out.println();
-      game = new Football();
-      game.play();		
-   }
+        Game game = new Cricket();
+        game.play();
+        System.out.println();
+        game = new Football();
+        game.play();
+    }
 }

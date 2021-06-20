@@ -2,18 +2,18 @@ package com.mi.patterns.behavioral.visitor.computer;
 
 public class Computer implements ComputerPart {
 
-   ComputerPart[] parts;
+    ComputerPart[] parts;
 
-   public Computer(){
-      parts = new ComputerPart[] {new Mouse(), new Keyboard(), new Monitor()};		
-   } 
+    public Computer() {
+        parts = new ComputerPart[]{new Mouse(), new Keyboard(), new Monitor()};
+    }
 
 
-   @Override
-   public void accept(ComputerPartVisitor computerPartVisitor) {
-      for (int i = 0; i < parts.length; i++) {
-         parts[i].accept(computerPartVisitor);
-      }
-      computerPartVisitor.visit(this);
-   }
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor) {
+        for (int i = 0; i < parts.length; i++) {
+            parts[i].accept(computerPartVisitor);
+        }
+        computerPartVisitor.visit(this);
+    }
 }

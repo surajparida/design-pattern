@@ -1,11 +1,11 @@
 package com.mi.patterns.behavioral.mediator.chat;
 
 public class MediatorPatternDemo {
-   public static void main(String[] args) {
-      User robert = new User("Robert");
-      User john = new User("John");
+    public static void main(String[] args) {
+        User robert = new User("Robert");
+        User john = new User("John");
 
-      robert.sendMessage("Hi! John!");
-      john.sendMessage("Hello! Robert!");
-   }
+        robert.sendMessage("Hi! John!");
+        john.sendMessage("Hello! Robert!");
+    }
 }
